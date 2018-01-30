@@ -24,7 +24,7 @@ export default class Example extends Component {
 }
 ```
 
-###API
+### API
 
 | Property | Type | Default | Description |
 |-------------|----------|--------------|----------------------------------------------------------------|
