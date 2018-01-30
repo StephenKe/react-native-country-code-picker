@@ -1,7 +1,7 @@
 {
   "name": "react-native-country-code-picker",
   "version": "1.0.0",
-  "description": "A react-native country-picker plugin",
+  "description": "A react-native country-code-picker plugin",
   "main": "CountryPicker.js",
   "directories": {
     "lib": "lib"
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/StephenKe/react-native-country-picker.git"
+    "url": "git+https://github.com/StephenKe/react-native-country-code-picker.git"
   },
   "keywords": [
     "react-native"
@@ -19,7 +19,7 @@
   "author": "StephenKe",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/StephenKe/react-native-country-picker/issues"
+    "url": "https://github.com/StephenKe/react-native-country-code-picker/issues"
   },
-  "homepage": "https://github.com/StephenKe/react-native-country-picker#readme"
+  "homepage": "https://github.com/StephenKe/react-native-country-code-picker#readme"
 }
