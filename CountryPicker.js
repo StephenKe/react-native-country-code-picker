@@ -1,6 +1,5 @@
 import React from 'react';
-import {View, Text, StyleSheet, TextInput, SectionList, ListView, TouchableHighlight, Modal} from "react-native";
-import Button from "react-native-button";
+import {View, Text, StyleSheet, TextInput, SectionList, ListView, TouchableHighlight, TouchableWithoutFeedback, Modal} from "react-native";
 import PropTypes from 'prop-types';
 
 const countryCodeSession = require('./lib/countryCode.json');
@@ -82,6 +81,7 @@ export default class extends React.Component {
     static propTypes= {
         isShow: PropTypes.bool,
         onPick: PropTypes.func,
+        animationType: PropTypes.string,
         // onCancel: PropTypes.func
     };
     sectionlist: SectionList;
@@ -165,7 +165,7 @@ export default class extends React.Component {
         ];
         let ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2});
         return (
-            <Modal visible={this.state.isShow} animationType={'slide'} transparent={false}>
+            <Modal visible={this.state.isShow} animationType={this.props.animationType || 'slide'} transparent={false}>
                 <View style={styles.container}>
                     <View style={[styles.container1]}>
                         <TextInput
@@ -174,7 +174,9 @@ export default class extends React.Component {
                             onChangeText={(text) => this.searchList(text)}
                             onFocus={() => this.setState({hideRightBar: true})}
                         />
-                        <Button　style={[styles.cancelBtn]} onPress={() => this.setState({isShow: false})}>X</Button>
+                        <TouchableWithoutFeedback onPress={() => this.setState({isShow: false})}>
+                            <Text style={[styles.cancelBtn]}>X</Text>
+                        </TouchableWithoutFeedback>
                     </View>
                     <View style={[styles.container2]}>
                         <SectionList
