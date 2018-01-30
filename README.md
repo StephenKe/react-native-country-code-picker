@@ -4,7 +4,8 @@ A react native country-code-picker plugin
 
 ### Installation
 
-`npm install react-native-country-code-picker --save`
+`npm install react-native-country-code-picker --save` or
+`yarn add react-native-country-code-picker --save`
 
 ### Example
 
@@ -22,6 +23,14 @@ export default class Example extends Component {
   }
 }
 ```
+
+###API
+
+| Property | Type | Default | Description |
+|-------------|----------|--------------|----------------------------------------------------------------|
+| isShow | `Boolean` | `false` | Whether show or not |
+| onPick   | `Function` |  | callback function after picked |
+| animationType | `String` | `slide` | animation when show and hide |
 
 ### License
 
