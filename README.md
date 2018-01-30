@@ -1,6 +1,6 @@
 # react-native-country-code-picker
 
-A react native country-code-picker plugin
+A react native country-code-picker plugin without any ios&android configuration
 
 ### Installation
 
