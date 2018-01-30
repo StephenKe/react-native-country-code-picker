@@ -8,7 +8,7 @@ A react native country-code-picker plugin
 
 ### Example
 
-![Alt text](https://wx3.sinaimg.cn/mw690/83509bcely1fnys0yqzsng20eg0pshe1.gif)
+[demo](https://wx3.sinaimg.cn/mw690/83509bcely1fnys0yqzsng20eg0pshe1.gif)
 
 ```javascript
 import React, { Component } from 'react';
