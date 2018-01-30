@@ -1,6 +1,6 @@
 {
   "name": "react-native-country-code-picker",
-  "version": "1.2.3",
+  "version": "1.2.4",
   "description": "A react-native country-code-picker plugin",
   "main": "CountryPicker.js",
   "directories": {
