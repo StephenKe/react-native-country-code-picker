@@ -30,7 +30,7 @@ export default class Example extends Component {
 |-------------|----------|--------------|----------------------------------------------------------------|
 | isShow | `Boolean` | `false` | Whether show or not |
 | onPick   | `Function` |  | callback function after picked |
-| animationType | `String` | `slide` | animation when show and hide |
+| animationType | `String` | `slide` | animation('slide', 'fade', 'none') when show and hide |
 
 #### onPick response Object
 
