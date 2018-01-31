@@ -32,10 +32,10 @@ export default class Example extends Component {
 | onPick   | `Function` |  | callback function after picked |
 | animationType | `String` | `slide` | animation when show and hide |
 
-## onPick response Object
+#### onPick response Object
 
 | Property | Type | Description |
-|-------------|----------|--------------|----------------------------------------------------------------|
+|-------------|----------|----------------------------------------------------------------|
 | countryName | `String` | country name |
 | countryPinyin   | `String` | country name spell in Chinese PinYin |
 | phoneCode | `String` | area code |
