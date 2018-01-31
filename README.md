@@ -18,7 +18,7 @@ import CountryCodePicker from 'react-native-country-code-picker';
 export default class Example extends Component {
   render() {
     return (
-      <CountryCodePicker isShow={true} />
+      <CountryCodePicker isShow={true} onPick={(res) => { setTimeout(() => { alert(res.phoneCode) }, 1000) }} />
     );
   }
 }
@@ -31,6 +31,15 @@ export default class Example extends Component {
 | isShow | `Boolean` | `false` | Whether show or not |
 | onPick   | `Function` |  | callback function after picked |
 | animationType | `String` | `slide` | animation when show and hide |
+
+## onPick response Object
+
+| Property | Type | Description |
+|-------------|----------|--------------|----------------------------------------------------------------|
+| countryName | `String` | country name |
+| countryPinyin   | `String` | country name spell in Chinese PinYin |
+| phoneCode | `String` | area code |
+| countryCode | `String` | country code |
 
 ### License
 
